@@ -10,12 +10,14 @@ function NavBar () {
     return (
         <div>
             <button
+            className="z-40 relative"
             onClick={()=> setToggle(!toggle)}
             >
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars} className="p-4" size="xl"/>
             </button>
             {toggle && (
-                <div className="top-0 left-0 w-[35vw] fixed p-5 md:p-10 inline-flex flex-col space-y-5 h-screen bg-grey text-l lg:text-xl font-body">
+                <div className="top-0 left-0 w-[30vw] fixed p-5 md:px-10 pt-14 inline-flex flex-col space-y-7 h-screen 
+                bg-grey text-l lg:text-xl font-body z-30">
                     <button
                     onClick={ () => navigate('/')}
                     >Home</button>

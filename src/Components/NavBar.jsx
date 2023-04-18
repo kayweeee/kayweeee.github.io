@@ -22,10 +22,10 @@ function NavBar () {
             className="z-40 fixed"
             onClick={()=> setToggle(!toggle)}
             >
-                <FontAwesomeIcon icon={faBars} className="p-4" size="xl"/>
+                <FontAwesomeIcon icon={faBars} className="p-3" size="xl"/>
             </button>
             {toggle && (
-                <div className="top-0 left-0 w-[30vw] fixed p-5 md:px-10 pt-14 flex flex-col h-screen bg-grey z-30 justify-between">
+                <div className="top-0 left-0 w-40 md:w-[30vw] fixed p-5 md:px-10 pt-14 flex flex-col h-screen bg-grey z-30 justify-between">
                     <div className="flex flex-col space-y-7 font-bold text-xl lg:text-2xl font-body">
                         <button
                         onClick={ () => navigate('/')}

@@ -18,20 +18,24 @@ function App () {
         <p>all things design</p>
       </div>
 
-      <div className="h-screen grid grid-rows-2 md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-slate-300">
-        <div className="flex items-center justify-center leading-normal text-5xl md:text-7xl font-display">
+      <div className="h-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-slate-300">
+        <div className="flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
           <p>Curious,<br/>
           Ambitious,<br/>
-          Passionate</p>
+          Passionate.</p>
         </div>
-        <div className="flex items-start justify-center">
+        <div className="flex items-center justify-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
 
-      <div className="h-screen">
-        <p className="p-5 text-5xl md:text-7xl font-display">Skills</p>
-        <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-14 px-5 py-3">
+      <div className="h-screen flex flex-col justify-center md:block">
+        <div className="p-5 md:p-10">
+          <p className="text-5xl md:text-7xl font-display">
+            Skills
+          </p>
+        </div>
+        <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-14 px-5 md:px-10 py-3 ">
           <div className="flex flex-col justify-center items-center py-0">
             <img src={htmllogo}/>
             <p>HTML</p>
@@ -66,14 +70,9 @@ function App () {
           </div>
         </div>
 
-        <div className="flex justify-end p-5">
+        <div className="flex justify-end p-5 md:px-10">
           <p>... with more in progress</p>
         </div>
-      </div>
-
-      <div className="h-screen flex flex-col items-center justify-center">
-        <p>I am always doing that which I cannot do, in order that I may learn how to do it.</p>
-        <p className=" text-end">- Pablo Picasso</p>
       </div>
     </>
   )

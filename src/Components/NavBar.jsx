@@ -19,7 +19,7 @@ function NavBar () {
     return (
         <div>
             <button
-            className="z-40 absolute"
+            className="z-40 fixed"
             onClick={()=> setToggle(!toggle)}
             >
                 <FontAwesomeIcon icon={faBars} className="p-4" size="xl"/>

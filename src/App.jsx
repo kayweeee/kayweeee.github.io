@@ -1,4 +1,7 @@
 import NavBar from "./Components/NavBar";
+import TypeIt from "typeit-react";
+
+// logos
 import csslogo from "./images/css_logo.png";
 import htmllogo from "./images/html_logo.png";
 import jslogo from "./images/js_logo.png";
@@ -20,9 +23,16 @@ function App () {
 
       <div className="h-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-slate-300">
         <div className="flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
-          <p>Curious,<br/>
+          <TypeIt
+          options={{
+            speed: 150, 
+            lifeLike: true,
+            waitUntilVisible: true,
+          }}
+          >Curious,<br/>
           Ambitious,<br/>
-          Passionate.</p>
+          Passionate.
+          </TypeIt>
         </div>
         <div className="flex items-center justify-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>

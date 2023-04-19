@@ -24,20 +24,24 @@ function NavBar () {
             >
                 <FontAwesomeIcon icon={faBars} className="p-3" size="xl"/>
             </button>
-            {toggle && (
-                <div className="top-0 left-0 w-40 md:w-[30vw] fixed p-5 md:px-10 pt-14 flex flex-col h-screen bg-grey z-30 justify-between">
+                <div className={`top-0 left-0 w-40 md:w-[30vw] fixed p-5 md:px-10 pt-14 flex flex-col h-screen bg-grey z-30 justify-between 
+                ease-in-out duration-300 ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
                     <div className="flex flex-col space-y-7 font-bold text-xl lg:text-2xl font-body">
                         <button
                         onClick={ () => navigate('/')}
+                        className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Home</button>
                         <button
                         onClick={ () => navigate('/aboutme')}
+                        className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >About</button>
                         <button
                         onClick={ () => navigate('/projects')}
+                        className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Projects</button>
                         <button
                         onClick={ () => navigate('/contactme')}
+                        className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Contact Me</button>
                     </div>
 
@@ -58,8 +62,6 @@ function NavBar () {
                         </button>
                     </div>
                 </div>
-            )}
-
         </div>
        
     )

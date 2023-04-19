@@ -6,11 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'black': '#000814',
-        'grey': '#D9D9D9',
-        'blue': '#003566',
-        'dark-yellow': '#ffc300',
-        'yellow': '#ffd60a'
+        'off-white': '#FBFBF2',
+        'grey': '#E5E6E4',
+        'timberwolf': 'CFD2CD',
+        'silver': 'A6A2A2'
       }
     },
     fontFamily: {

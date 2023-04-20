@@ -22,6 +22,14 @@ function About () {
             <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">
                 <p>Education</p>
             </div>
+
+            <div className="snap-start h-screen flex flex-col justify-center items-center">
+                <p>Work Experience</p>
+            </div>
+
+            <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">
+                <p>Life</p>
+            </div>
         </div>
         </>
     )

@@ -4,24 +4,25 @@ function About () {
 
     return(
         <>
-        <div className="h-screen w-screen">
-            <p className="-rotate-90 absolute top-28 -left-12
-            text-3xl md:text-4xl underline underline-offset-8 font-display">About Me</p>
-            <div className="grid grid-cols-4">
-                <div className="col-span-2 col-start-2">
+        <div className="snap-y snap-mandatory h-screen overflow-scroll">
+            <div className="snap-start h-screen w-screen flex flex-col justify-center items-center gap-4">
+                <p className="
+                text-xl md:text-4xl underline underline-offset-8 font-display pb-3">About Me</p>
+                <div className=" w-3/4 ">
                     <img src={pic1}
-                    className="img-fluid rounded-lg"
+                    className="rounded"
                     />
                 </div>
-                <div className="col-start-2">
-                    Hi!
+                <div className="w-3/4">
+                    <p className="text-2xl text-grey font-display pb-2">explorer and learner</p>
+                    <p className="text-md">hi! welcome to my website, where i document my journey  to becoming a full-stack software engineer. </p>
                 </div>
             </div>
             
+            <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">
+                <p>Education</p>
+            </div>
         </div>
-
-        <div className="h-screen bg-grey"></div>
-      
         </>
     )
 }

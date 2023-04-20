@@ -15,8 +15,6 @@ function App () {
 
   return (
     <>
-      <NavBar/> 
-
       <div className="snap-y snap-mandatory h-screen overflow-scroll">
 
         {/* intro screen */}
@@ -25,7 +23,7 @@ function App () {
           <p>all things design</p>
         </div>
 
-      {/* about screen */}
+        {/* about screen */}
         <div className="snap-start h-screen w-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-slate-300">
           <div className="flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
             <TypeIt

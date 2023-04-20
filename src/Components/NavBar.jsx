@@ -28,19 +28,35 @@ function NavBar () {
                 ease-in-out duration-300 ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
                     <div className="flex flex-col space-y-7 font-bold text-xl lg:text-2xl font-body">
                         <button
-                        onClick={ () => navigate('/')}
+                        onClick={ () => {
+                            navigate('/');
+                            setToggle(!toggle);
+                            }
+                        }
                         className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Home</button>
                         <button
-                        onClick={ () => navigate('/aboutme')}
+                        onClick={ () => {
+                            navigate('/aboutme');
+                            setToggle(!toggle);
+                            }
+                        }
                         className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >About</button>
                         <button
-                        onClick={ () => navigate('/projects')}
+                        onClick={ () => {
+                            navigate('/projects');
+                            setToggle(!toggle);
+                            }
+                        }
                         className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Projects</button>
                         <button
-                        onClick={ () => navigate('/contactme')}
+                        onClick={ () => {
+                            navigate('/contactme');
+                            setToggle(!toggle);
+                            }
+                        }
                         className="transition ease-in-out duration-200 hover:text-white hover:underline hover:decoration-dotted hover:underline-offset-8"
                         >Contact Me</button>
                     </div>

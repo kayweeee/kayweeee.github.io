@@ -1,12 +1,27 @@
+import pic1 from "./images/me1.jpg";
+
 function About () {
+
     return(
         <>
-        <div class="snap-y snap-mandatory h-screen overflow-scroll">
-    <div class="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl">1</div>
-    <div class="snap-start bg-teal-200 w-screen  h-screen flex items-center justify-center text-8xl">2</div>
-    <div class="snap-start bg-cyan-200 w-screen h-screen flex items-center justify-center text-8xl">3</div>
-    <div class="snap-start bg-fuchsia-200 w-screen h-screen flex items-center justify-center text-8xl">4</div>
-</div>
+        <div className="h-screen w-screen">
+            <p className="-rotate-90 absolute top-28 -left-12
+            text-3xl md:text-4xl underline underline-offset-8 font-display">About Me</p>
+            <div className="grid grid-cols-4">
+                <div className="col-span-2 col-start-2">
+                    <img src={pic1}
+                    className="img-fluid rounded-lg"
+                    />
+                </div>
+                <div className="col-start-2">
+                    Hi!
+                </div>
+            </div>
+            
+        </div>
+
+        <div className="h-screen bg-grey"></div>
+      
         </>
     )
 }

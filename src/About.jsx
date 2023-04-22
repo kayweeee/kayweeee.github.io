@@ -1,5 +1,6 @@
 import pic1 from "./images/me1.jpg";
 import EduCard from "./Components/EduCard";
+import WorkExp from "./Components/WorkExp";
 
 function About () {
 
@@ -87,8 +88,19 @@ function About () {
                 </div>
             </div>
 
-            <div className="snap-start h-screen flex flex-col justify-center items-center">
-                <p>Work Experience</p>
+            {/* third page */}
+            <div className="snap-start flex flex-col justify-center py-10">
+                <div className="text-2xl md:text-4xl underline underline-offset-8 pl-10 md:pl-16 pb-4 md:pb-10 font-display">
+                     Work Experience
+                </div>
+                <div className="grid grid-cols-8 gap-x-8">
+                    <div className=" col-span-3 col-start-2">
+                        <WorkExp/>
+                    </div>
+                    <div className=" col-span-3 col-start-5">
+                        <WorkExp/>
+                    </div>
+                </div>            
             </div>
 
             <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">

@@ -4,8 +4,8 @@ function ReapraCard () {
 
     return (
         <div className="flex flex-col items-center gap-5 rounded border-2 border-gray-400 px-10 py-5">
-            <img src={reapralogo} className=" z-0 h-30 w-48 rounded-full drop-shadow-xl"/>
-            <div className="z-50">
+            <img src={reapralogo} className=" h-30 w-48 rounded-full drop-shadow-xl"/>
+            <div className="">
                 <p className="font-bold text-xl text-center">Investment Intern</p>
                 <p className=" italic text-center text-sm pb-3">Feb 2020 - Jul 2020 </p>
                 <p className="text-sm">

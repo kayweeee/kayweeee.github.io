@@ -25,21 +25,28 @@ function App () {
 
         {/* about screen */}
         <div className="snap-start h-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-grey">
-          <div className="md:relative flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
+          <div className="md:relative h-full flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
             <TypeIt
             options={{
               speed: 150, 
               lifeLike: true,
               waitUntilVisible: true,
             }}
-            className="md:absolute"
+            className=""
             >Curious,<br/>
             Ambitious,<br/>
             Passionate.
             </TypeIt>
           </div>
-          <div className="flex items-center justify-center">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div className="flex flex-col items-start justify-center gap-2">
+          <p className="font-bold text-start text-xl text-gray-400">
+            Aspiring Software Engineer
+          </p>
+          <p>
+          Frontend development calls to all my passions. 
+          It combines creativity with problem solving in the form of coding, giving me the best of both worlds. I love the process of not just designing something that enhances others' lives, but also the satisfaction of being able to build it from zero. 
+          Looking to use technology to create a positive impact on our big earth :)
+          </p>
           </div>
         </div>
         

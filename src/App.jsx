@@ -18,20 +18,21 @@ function App () {
       <div className="snap-y snap-mandatory h-screen overflow-scroll">
 
         {/* intro screen */}
-        <div className="snap-start h-screen w-screen flex flex-col justify-center items-center">
+        <div className="snap-start h-screen flex flex-col justify-center items-center">
           <p className="text-5xl md:text-7xl font-display">KAY WEE</p>
           <p>all things design</p>
         </div>
 
         {/* about screen */}
-        <div className="snap-start h-screen w-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-slate-300">
-          <div className="flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
+        <div className="snap-start h-screen flex flex-col justify-center space-y-5 md:grid md:grid-cols-2 md:gap-10 px-8 md:px-14 bg-grey">
+          <div className="md:relative flex items-center justify-center leading-normal md:leading-relaxed text-5xl md:text-7xl font-display">
             <TypeIt
             options={{
               speed: 150, 
               lifeLike: true,
               waitUntilVisible: true,
             }}
+            className="md:absolute"
             >Curious,<br/>
             Ambitious,<br/>
             Passionate.
@@ -43,7 +44,7 @@ function App () {
         </div>
         
         {/* skill screen */}
-        <div className="snap-start h-screen w-screen overflow-scroll flex flex-col justify-center md:block">
+        <div className="snap-start flex flex-col justify-center md:block">
           <div className="p-5 md:p-10">
             <p className="text-5xl md:text-7xl font-display">
               Skills

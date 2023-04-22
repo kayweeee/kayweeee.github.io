@@ -1,6 +1,7 @@
 import pic1 from "./images/me1.jpg";
 import EduCard from "./Components/EduCard";
-import WorkExp from "./Components/WorkExp";
+import ReapraCard from "./Components/ReapraCard";
+import TastyCard from "./Components/TastyCard";
 
 function About () {
 
@@ -89,23 +90,23 @@ function About () {
             </div>
 
             {/* third page */}
-            <div className="snap-start flex flex-col justify-center py-10">
+            <div className="snap-start flex flex-col justify-center pt-10 pb-20">
                 <div className="text-2xl md:text-4xl underline underline-offset-8 pl-10 md:pl-16 pb-4 md:pb-10 font-display">
                      Work Experience
                 </div>
-                <div className="grid grid-cols-8 gap-x-8">
-                    <div className=" col-span-3 col-start-2">
-                        <WorkExp/>
+                <div className="grid grid-cols-1 px-10 gap-y-8 md:gap-y-0 md:px-0 md:grid-cols-8 md:gap-x-8">
+                    <div className=" col-span-1 md:col-span-3 md:col-start-2">
+                        <ReapraCard/>
                     </div>
-                    <div className=" col-span-3 col-start-5">
-                        <WorkExp/>
+                    <div className="col-span-1 md:col-span-3 md:col-start-5">
+                        <TastyCard/>
                     </div>
                 </div>            
             </div>
 
-            <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">
+            {/* <div className="snap-start h-screen flex flex-col justify-center items-center bg-grey">
                 <p>Life</p>
-            </div>
+            </div> */}
         </div>
         </>
     )

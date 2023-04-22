@@ -1,6 +1,6 @@
 import reapralogo from "../images/reapralogo.png"
 
-function WorkExp () {
+function ReapraCard () {
 
     return (
         <div className="flex flex-col items-center gap-5 rounded border-2 border-gray-400 px-10 py-5">
@@ -18,4 +18,4 @@ function WorkExp () {
     )
 }
 
-export default WorkExp;
+export default ReapraCard;

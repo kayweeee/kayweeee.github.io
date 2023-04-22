@@ -36,11 +36,12 @@ function About () {
                      Education
                 </div>
                 {/* timeline with circles */}
+                {/* use js to fix height of circles */}
                 <div className="h-5/6 absolute w-3 border-l-4 border-gray-400 rounded self-center"></div>
-                <div className="absolute place-self-center mr-2 -mt-72 mb-72 rounded-full w-8 h-8 bg-gray-400"></div>
+                <div className="absolute place-self-center mr-2 top-48 rounded-full w-8 h-8 bg-gray-400"></div>
                 <div className="absolute place-self-center mr-2 mb-20 rounded-full w-8 h-8 bg-gray-400"></div>
-                <div className="absolute place-self-center mr-2 mt-96 -mb-12 rounded-full w-8 h-8 bg-gray-400"></div>
-                <div className="absolute place-self-center mr-2 mt-96 -mb-80 rounded-full w-8 h-8 bg-gray-400"></div>
+                <div className="absolute place-self-center mr-2 mt-96 -mb-52 md:mt-96 md:-mb-12 rounded-full w-8 h-8 bg-gray-400"></div>
+                <div className="absolute place-self-center mr-2 bottom-24 rounded-full w-8 h-8 bg-gray-400"></div>
 
                 {/* content */}
                 <div className="grid grid-cols-8 gap-y-8 gap-x-8">

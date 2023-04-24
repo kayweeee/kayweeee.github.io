@@ -1,15 +1,14 @@
-import NavBar from "./Components/NavBar";
 import TypeIt from "typeit-react";
 
 // logos
-import csslogo from "./images/css_logo.png";
-import htmllogo from "./images/html_logo.png";
-import jslogo from "./images/js_logo.png";
-import reactlogo from "./images/react_logo.png";
-import pythonlogo from "./images/python_logo.png";
-import githublogo from "./images/github_logo.png";
-import bootstraplogo from "./images/bootstrap_logo.png";
-import tailwindlogo from "./images/tailwind_logo.png";
+import csslogo from "./images/skill-logos/css_logo.png";
+import htmllogo from "./images/skill-logos/html_logo.png";
+import jslogo from "./images/skill-logos/js_logo.png";
+import reactlogo from "./images/skill-logos/react_logo.png";
+import pythonlogo from "./images/skill-logos/python_logo.png";
+import githublogo from "./images/skill-logos/github_logo.png";
+import bootstraplogo from "./images/skill-logos/bootstrap_logo.png";
+import tailwindlogo from "./images/skill-logos/tailwind_logo.png";
 
 function App () {
 

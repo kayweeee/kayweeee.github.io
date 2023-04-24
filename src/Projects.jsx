@@ -1,5 +1,6 @@
 import ProjectCard from "./Components/ProjectCard";
-import me from "./images/me1.jpg"
+import sds from "./images/sds.jpg"
+import hci from "./images/hci.png"
 
 function Projects () {
     
@@ -13,12 +14,23 @@ function Projects () {
                     <div className=" col-span-2 col-start-2">
                         <ProjectCard 
                         name="Dynostic"
-                        desc="Developed a mobile application with machine learning capabilities to assist in quality checks, along with a dashboard to
+                        desc="A module in school done in collaboration with Google. Developed a mobile application with machine learning capabilities to assist in quality checks, along with a dashboard to
                         compile the data collected from the app for our client (TSH Group)"
-                        skills={["HTML", "Mantine", "React", "CSS", "JavaScript"]}
+                        skills={["HTML", "Mantine", "React", "CSS", "JavaScript", "Machine Learning"]}
                         github="https://github.com/kayweeee/final-project-dynos-team10"
                         website="https://sites.google.com/view/group10dynostic/home?pli=1"
-                        pic={me}
+                        pic={sds}
+                        />
+                    </div>
+                    <div className=" col-span-2 col-start-4">
+                        <ProjectCard 
+                        name="Weightlifting Buddy"
+                        desc="Developed a web application with the capability to detect incorrect form
+                        during physical exercises using AI. Conducted in-depth user testing and user studies to fine-tune the design of the app"
+                        skills={["UI/UX", "User testing", "HTML", "Mantine", "React", "Machine Learning"]}
+                        github="https://github.com/kayweeee/WeightliftBuddy"
+                        website="https://youtu.be/CtGs5C-of20"
+                        pic={hci}
                         />
                     </div>
                    

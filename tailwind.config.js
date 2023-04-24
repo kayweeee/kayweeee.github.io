@@ -15,7 +15,8 @@ module.exports = {
     fontFamily: {
       'display': ["Bree Serif"],
       'body': ["Alegreya"]
-    }
+    },
+    
   },
   plugins: [],
 }

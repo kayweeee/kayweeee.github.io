@@ -12,9 +12,9 @@ function ProjectCard (props) {
 
     return (
         <>
-            <div class="group h-96 w-80 [perspective:1500px]">
+            <div class="group h-96 md:w-80 w-72 [perspective:3000px]">
                 {/* front page */}
-                <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div class="relative h-full w-full shadow-xl transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div class="absolute inset-0 h-2/3 flex flex-col [backface-visibility:hidden]">
                         <img class="h-full w-full rounded object-cover" src={pic} />
                         <p className="block text-2xl font-display underline underline-offset-4 pt-2 px-3">{name}</p>

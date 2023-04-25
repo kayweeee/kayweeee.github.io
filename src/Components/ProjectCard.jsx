@@ -36,6 +36,7 @@ function ProjectCard (props) {
                                     onClick={() => {
                                     window.open(`${website}`)
                                     }}
+                                    className="hover:opacity-70 transition-all duration-200"
                                     >
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2xl" style={{color: "#ffffff",}} />
                                     </button>
@@ -43,7 +44,9 @@ function ProjectCard (props) {
                                     <button
                                     onClick={() => {
                                     window.open(`${github}`)
-                                    }}>
+                                    }}
+                                    className="hover:opacity-70 transition-all duration-200"
+                                    >
                                         <FontAwesomeIcon icon={faGithubSquare} size="2xl" style={{color: "#ffffff",}} />
                                     </button>
                                 </div>

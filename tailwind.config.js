@@ -16,6 +16,21 @@ module.exports = {
       'display': ["Bree Serif"],
       'body': ["Alegreya"]
     },
+    keyframes: {
+      'fade-in-up': {
+        '0%': {
+          transform: 'translateY(19%)',
+          opacity: '0'
+        },
+        '100%': {
+          transform: 'tranlateY(0)',
+          opacity: '1'
+        }
+      }
+    },
+    animation: {
+      'fade-in-up': 'fade-in-up 0.5s ease-out'
+    }
     
   },
   plugins: [],

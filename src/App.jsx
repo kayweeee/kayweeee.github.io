@@ -1,4 +1,7 @@
 import TypeIt from "typeit-react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 // logos
 import csslogo from "./images/skill-logos/css_logo.png";
@@ -11,14 +14,36 @@ import bootstraplogo from "./images/skill-logos/bootstrap_logo.png";
 import tailwindlogo from "./images/skill-logos/tailwind_logo.png";
 
 function App () {
+  // const targets = document.querySelectorAll(".float-in");
+  // const observer = new IntersectionObserver(callback);
+
+  // targets.forEach(function(target) {
+  //   target.classList.add("opacity-0");
+  //   observer.observe(target);
+  // });
+
+  // const callback = function(entries) {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add("animate-fade-in-up");
+  //     } else {
+  //       entry.target.classList.remove("animate-fade-in-up");
+  //     }
+  //   }
+  //     )
+  // }
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
+
 
   return (
     <>
       <div className="snap-y snap-mandatory h-screen overflow-scroll">
 
         {/* intro screen */}
-        <div className="snap-start h-screen flex flex-col justify-center items-center">
-          <p className="text-5xl md:text-7xl font-display">KAY WEE</p>
+        <div className="snap-start h-screen flex flex-col justify-center items-center" >
+          <p className="text-5xl md:text-7xl font-display" data-aos="flip-right">KAY WEE</p>
           <p>all things design</p>
         </div>
 
@@ -37,8 +62,8 @@ function App () {
             Passionate.
             </TypeIt>
           </div>
-          <div className="flex flex-col items-start justify-center gap-2">
-          <p className="font-bold text-start text-xl text-gray-400">
+          <div className="flex flex-col items-start justify-center gap-2 " >
+          <p className="font-bold text-start text-xl text-gray-400 ">
             Aspiring Software Engineer
           </p>
           <p>
@@ -89,11 +114,15 @@ function App () {
               <img src={tailwindlogo}/>
               <p>Tailwind</p>
             </div>
+            <div className="w-10 h-10 bg-black" >
+
           </div>
 
           <div className="flex justify-end p-5 md:px-10">
             <p>... with more in progress</p>
           </div>
+        </div>
+
         </div>
 
       </div>

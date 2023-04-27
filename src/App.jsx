@@ -36,23 +36,6 @@ const floatInVariants = {
   }
 }
 
-const logoInVariants = {
-  hidden:{
-    opacity: 0, 
-    scale: 0.5, 
-    y:200
-  },
-
-  visible: {
-    opacity: 1, 
-    scale: 1, 
-    y: 0,
-    transition: {duration: 1.5, type:"spring", delay: 1},
-  }
-
-}
-
-
 
 function App () {
   return (

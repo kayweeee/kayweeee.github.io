@@ -7,7 +7,7 @@ function About () {
 
     return(
         <>
-        <div className="snap-y snap-mandatory h-screen overflow-scroll">
+        <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip">
             
             {/* first page */}
             <div className="snap-start w-screen h-screen flex flex-col justify-center">

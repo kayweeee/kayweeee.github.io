@@ -11,6 +11,16 @@ import githublogo from "./images/skill-logos/github_logo.png";
 import bootstraplogo from "./images/skill-logos/bootstrap_logo.png";
 import tailwindlogo from "./images/skill-logos/tailwind_logo.png";
 
+const skills = [{logo: csslogo, name: "HTML"}, 
+                {logo: htmllogo, name: "HTML"},
+                {logo: jslogo, name: "JavaScript"},
+                {logo: reactlogo, name: "React"},
+                {logo: pythonlogo, name: "Python"},
+                {logo: githublogo, name: "Github"},
+                {logo: bootstraplogo, name: "Bootstrap"},
+                {logo: tailwindlogo, name: "Tailwind"},
+              ]
+
 const floatInVariants = {
   hidden:{
     opacity: 0, 
@@ -47,7 +57,7 @@ const logoInVariants = {
 function App () {
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-scroll">
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip">
 
         {/* intro screen */}
         <div className="snap-start h-screen flex flex-col justify-center items-center">
@@ -87,55 +97,35 @@ function App () {
         </div>
         
         {/* skill screen */}
-        <div className="snap-start flex flex-col justify-center md:block">
-          <div className="p-5 md:p-10">
+        <div className="snap-start flex flex-col justify-center h-screen">
+          {/* <div className="p-5 md:p-8">
             <p className="text-2xl md:text-5xl font-display">
               Skills
             </p>
+          </div> */}
+          <div className="text-2xl md:text-4xl underline underline-offset-8 pl-10 md:pl-16 pb-4 md:pb-8 font-display">
+              Skills
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-14 px-5 md:px-10 pb-10">
-            <motion.div 
-            className="flex flex-col justify-center items-center py-0"
-            variants={floatInVariants}
-            initial='hidden'
-            whileInView='visible'
-            >
-              <img src={htmllogo}/>
-              <p>HTML</p>
-            </motion.div>
-            <motion.div 
-            className="flex flex-col justify-center items-center"
-            variants={floatInVariants}
-            initial='hidden'
-            whileInView='visible'
-            >
-              <img src={csslogo}/>
-              <p>CSS</p>
-            </motion.div>
-            <div className="flex flex-col justify-center items-center">
-              <img src={jslogo}/>
-              <p>JavaScript</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-5">
-              <img src={pythonlogo}/>
-              <p>Python</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-6">
-              <img src={reactlogo}/>
-              <p>React</p>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-5">
-              <img src={githublogo}/>
-              <p>Github</p>
-            </div>
-            <div className="flex flex-col justify-between items-center">
-              <img src={bootstraplogo}/>
-              <p>Bootstrap</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <img src={tailwindlogo}/>
-              <p>Tailwind</p>
-            </div>
+          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-x-20 px-5 md:px-16 pb-10">
+            {skills.map((element, i) => (
+               <motion.div 
+                className="flex flex-col justify-center items-center py-0"
+                initial={{
+                  opacity: 0, 
+                  scale: 0.5, 
+                  y:50
+                  }}
+                whileInView={{
+                  opacity: 1, 
+                  scale: 1, 
+                  y: 0,
+                }}
+              transition={{duration: 0.7, type:"spring", delay: i*0.3}}
+               >
+                 <img src={element.logo}/>
+                 <p>{element.name}</p>
+               </motion.div>
+            ))}
 
             <div className=" flex items-end justify-end col-span-2 col-start-3 md:col-start-5 p-5 md:px-10">
               <p>... with more in progress</p>

@@ -11,8 +11,40 @@ import githublogo from "./images/skill-logos/github_logo.png";
 import bootstraplogo from "./images/skill-logos/bootstrap_logo.png";
 import tailwindlogo from "./images/skill-logos/tailwind_logo.png";
 
-function App () {
+const floatInVariants = {
+  hidden:{
+    opacity: 0, 
+    scale: 0.5, 
+    y:200
+  },
 
+  visible: {
+    opacity: 1, 
+    scale: 1, 
+    y: 0,
+    transition: {duration: 1.5, type:"spring"},
+  }
+}
+
+const logoInVariants = {
+  hidden:{
+    opacity: 0, 
+    scale: 0.5, 
+    y:200
+  },
+
+  visible: {
+    opacity: 1, 
+    scale: 1, 
+    y: 0,
+    transition: {duration: 1.5, type:"spring", delay: 1},
+  }
+
+}
+
+
+
+function App () {
   return (
     <>
       <div className="snap-y snap-mandatory h-screen overflow-scroll">
@@ -39,11 +71,9 @@ function App () {
             </TypeIt>
           </div>
           <motion.div className="flex flex-col items-start justify-center gap-2"
-                    initial={{opacity: 0, scale: 0.5, y:200}}
-                    whileInView={{opacity: 1, scale: 1, y: 0}}
-                    exit={{opacity:0}}
-                    transition={{duration: 0.6}}
-          
+            variants={floatInVariants}
+            initial='hidden'
+            whileInView='visible'          
           >
             <p className="font-bold text-start text-xl text-gray-400">
               Aspiring Software Engineer
@@ -59,19 +89,29 @@ function App () {
         {/* skill screen */}
         <div className="snap-start flex flex-col justify-center md:block">
           <div className="p-5 md:p-10">
-            <p className="text-5xl md:text-7xl font-display">
+            <p className="text-2xl md:text-5xl font-display">
               Skills
             </p>
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-14 px-5 md:px-10 py-3 ">
-            <div className="flex flex-col justify-center items-center py-0">
+          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-14 px-5 md:px-10 pb-10">
+            <motion.div 
+            className="flex flex-col justify-center items-center py-0"
+            variants={floatInVariants}
+            initial='hidden'
+            whileInView='visible'
+            >
               <img src={htmllogo}/>
               <p>HTML</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
+            </motion.div>
+            <motion.div 
+            className="flex flex-col justify-center items-center"
+            variants={floatInVariants}
+            initial='hidden'
+            whileInView='visible'
+            >
               <img src={csslogo}/>
               <p>CSS</p>
-            </div>
+            </motion.div>
             <div className="flex flex-col justify-center items-center">
               <img src={jslogo}/>
               <p>JavaScript</p>
@@ -97,10 +137,10 @@ function App () {
               <p>Tailwind</p>
             </div>
 
-          <div className="flex justify-end p-5 md:px-10">
-            <p>... with more in progress</p>
+            <div className=" flex items-end justify-end col-span-2 col-start-3 md:col-start-5 p-5 md:px-10">
+              <p>... with more in progress</p>
+            </div>
           </div>
-        </div>
 
         </div>
 

@@ -2,9 +2,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import github from "../images/contactgithub.svg"
-import linkedin from "../images/linkedin.svg"
-import mail from "../images/contactmail.svg"
+import github from "../images/contactgithub.svg";
+import linkedin from "../images/linkedin.svg";
+import mail from "../images/contactmail.svg";
+
+import { motion } from "framer-motion";
+
+// animation stuff
+const buttonPressVariants = {
+    press:{
+        scale: 0.80,
+    },
+    
+};
 
 function NavBar () {
     const [toggle, setToggle] = useState(false);
@@ -18,12 +28,14 @@ function NavBar () {
 
     return (
         <div>
-            <button
+            <motion.button
             className="z-40 fixed"
             onClick={()=> setToggle(!toggle)}
+            variants={buttonPressVariants}
+            whileTap='press'
             >
                 <FontAwesomeIcon icon={faBars} className="p-3" size="xl"/>
-            </button>
+            </motion.button>
                 <div className={`top-0 left-0 w-40 md:w-[30vw] fixed p-5 md:px-10 pt-14 flex flex-col h-screen bg-slate-300 z-30 justify-between 
                 ease-in-out duration-300 ${toggle ? "translate-x-0" : "-translate-x-full"}`}>
                     <div className="flex flex-col space-y-7 font-bold text-xl lg:text-2xl font-body">
@@ -62,20 +74,27 @@ function NavBar () {
                     </div>
 
                     <div className="flex flex-row justify-end gap-4">
-                        <button className="pb-1"
+                        <motion.button 
+                        className="pb-1"
+                        variants={buttonPressVariants}
+                        whileHover='press'
                         >
                             <img src={mail} width={60}/>
-                        </button>
-                        <button
+                        </motion.button>
+                        <motion.button
                         onClick={handleLinkedin}
+                        variants={buttonPressVariants}
+                        whileHover='press'
                         >
                             <img src={linkedin} width={50}/>
-                        </button>
-                        <button
+                        </motion.button>
+                        <motion.button
                         onClick={handleGithub}
+                        variants={buttonPressVariants}
+                        whileHover='press'
                         >
                             <img src={github} width={50}/>
-                        </button>
+                        </motion.button>
                     </div>
                 </div>
         </div>

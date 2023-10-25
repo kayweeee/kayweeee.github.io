@@ -20,7 +20,7 @@ function SkillBadge(props) {
       <img
         src={props.logo}
         alt={props.name}
-        className="h-[100px] object-contain"
+        className="h-[75px] object-contain"
       />
       <p>{props.name}</p>
     </motion.div>

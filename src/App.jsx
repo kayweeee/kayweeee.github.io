@@ -1,27 +1,7 @@
 import { motion } from "framer-motion";
 import me from "./images/pictures/me.png";
 import SkillBadge from "./Components/SkillBadge";
-
-// logos
-import csslogo from "./images/skill-logos/css_logo.png";
-import htmllogo from "./images/skill-logos/html_logo.png";
-import jslogo from "./images/skill-logos/js_logo.png";
-import reactlogo from "./images/skill-logos/react_logo.png";
-import pythonlogo from "./images/skill-logos/python_logo.png";
-import githublogo from "./images/skill-logos/github_logo.png";
-import bootstraplogo from "./images/skill-logos/bootstrap_logo.png";
-import tailwindlogo from "./images/skill-logos/tailwind_logo.png";
-
-const skills = [
-  { logo: csslogo, name: "CSS" },
-  { logo: htmllogo, name: "HTML" },
-  { logo: jslogo, name: "JavaScript" },
-  { logo: reactlogo, name: "React" },
-  { logo: pythonlogo, name: "Python" },
-  { logo: githublogo, name: "Github" },
-  { logo: bootstraplogo, name: "Bootstrap" },
-  { logo: tailwindlogo, name: "Tailwind" },
-];
+import skills from "./utils/Skills";
 
 const floatInVariants = {
   hidden: {
@@ -67,18 +47,11 @@ function App() {
         </div>
 
         {/* skill screen */}
-        <div className="snap-start flex flex-col justify-center pl-14">
-          <div className="text-4xl sm:text-7xl font-display text-orange mt-6 ">
+        <div className="snap-start flex flex-col justify-center pl-14 h-screen">
+          <div className="text-4xl sm:text-7xl font-display text-orange">
             SKILLS
           </div>
-          <div>
-            <p>Languages</p>
-            <p>Frameworks</p>
-            <p>Libraries</p>
-            <p>Databases</p>
-            <p>Others</p>
-          </div>
-          <div className="grid grid-cols-4 md:grid-cols-6 gap-6 md:gap-x-20 px-5 md:px-16 pb-10">
+          <div className="flex flex-row flex-wrap gap-x-6 gap-y-5 mt-5">
             {skills.map((element, i) => (
               <SkillBadge
                 logo={element.logo}

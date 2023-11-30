@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import SkillBadge from "./Components/SkillBadge";
 import skills from "./utils/Skills";
 import IntroPage from "./Components/IntroPage";
-
+import WorkExpPage from "./Components/WorkExpPage";
 const floatInVariants = {
   hidden: {
     opacity: 0,
@@ -27,10 +27,15 @@ function App() {
           <IntroPage />
         </div>
 
+        {/* about me screen */}
+        <div className="snap-start h-fit flex justify-center">
+          <WorkExpPage />
+        </div>
+
         {/* skill screen */}
         <div className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-24 ">
           <div className="flex flex-col mt-5 pl-14 sm:pl-0">
-            <div className="text-4xl sm:text-7xl font-display text-orange pr-10">
+            <div className="text-4xl sm:text-6xl font-display text-orange pr-10">
               SKILLS
             </div>
             <div className="bg-orange my-2 h-[5px] w-full" />

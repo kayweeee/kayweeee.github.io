@@ -1,7 +1,5 @@
 import pic1 from "./images/me1.jpg";
 import EduCard from "./Components/EduCard";
-// import ReapraCard from "./Components/ReapraCard";
-// import TastyCard from "./Components/TastyCard";
 import { motion } from "framer-motion";
 
 const slowFloatInVariants = {

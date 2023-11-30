@@ -6,11 +6,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import github from "../images/contactgithub.svg";
-import linkedin from "../images/linkedin.svg";
-import mail from "../images/contactmail.svg";
-
 import { motion } from "framer-motion";
 
 // animation stuff

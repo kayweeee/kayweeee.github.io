@@ -23,7 +23,7 @@ const floatInVariants = {
 function App() {
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip">
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip scrollbar-hide">
         {/* intro screen */}
         <div className="snap-start h-screen flex justify-center">
           <IntroPage />

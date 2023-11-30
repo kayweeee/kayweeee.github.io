@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a3286bd.css",
-    "main.js": "/static/js/main.9ed19e34.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/static/css/main.6572b04d.css",
+    "main.js": "/static/js/main.3c68adbc.js",
     "static/media/sds.jpg": "/static/media/sds.19f2bf9726a4842d31c9.jpg",
+    "static/media/me.png": "/static/media/me.17958c640279a3f0532a.png",
     "static/media/hci.png": "/static/media/hci.b518153f1b4e7fe95d35.png",
     "static/media/react_logo.png": "/static/media/react_logo.81ed438b18e24116794d.png",
     "static/media/me1.jpg": "/static/media/me1.37303e676a1654c20de3.jpg",
+    "static/media/mongo_logo.png": "/static/media/mongo_logo.41e505b098e3087319b8.png",
     "static/media/bootstrap_logo.png": "/static/media/bootstrap_logo.a692f04a045f8133192d.png",
+    "static/media/american_flag.png": "/static/media/american_flag.f75b91399afcd79c5640.png",
     "static/media/tailwind_logo.png": "/static/media/tailwind_logo.9c2e5bcf4f97d73e438e.png",
     "static/media/cfglogo.png": "/static/media/cfglogo.518c8dcad822c8f1f923.png",
-    "static/media/linkedin.svg": "/static/media/linkedin.b0a52ce113d85a7512c8ed0fe3d03628.svg",
-    "static/media/contactgithub.svg": "/static/media/contactgithub.33096812b62f7a701d7d3acfa553473e.svg",
-    "static/media/tastylogo.png": "/static/media/tastylogo.6a19c0316d15df239ccc.png",
+    "static/media/pawjourr_logo.png": "/static/media/pawjourr_logo.f37d29dfca99d4fc1046.png",
+    "static/media/tastysnack_logo.png": "/static/media/tastysnack_logo.c3c0a154c1e1ec6f3166.png",
+    "static/media/reapra_logo.png": "/static/media/reapra_logo.a9c8bf679f225db6a315.png",
+    "static/media/firebase_logo.png": "/static/media/firebase_logo.8584a25cb878e376b81d.png",
+    "static/media/nextjs_logo.png": "/static/media/nextjs_logo.5e42720796883e5d7251.png",
     "static/media/css_logo.png": "/static/media/css_logo.1063f6a88e1955ec31e7.png",
     "static/media/js_logo.png": "/static/media/js_logo.c26feef46ff18cfda7b4.png",
     "static/media/html_logo.png": "/static/media/html_logo.64a4f163c4ab5757278a.png",
-    "static/media/contactmail.svg": "/static/media/contactmail.2d67d9976fc9e6cf23552b459b47af26.svg",
+    "static/media/jwt_logo.svg": "/static/media/jwt_logo.56f1e8c2e3c6e934664375ec002ea50d.svg",
     "index.html": "/index.html",
-    "main.4a3286bd.css.map": "/static/css/main.4a3286bd.css.map",
-    "main.9ed19e34.js.map": "/static/js/main.9ed19e34.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.6572b04d.css.map": "/static/css/main.6572b04d.css.map",
+    "main.3c68adbc.js.map": "/static/js/main.3c68adbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3286bd.css",
-    "static/js/main.9ed19e34.js"
+    "static/css/main.6572b04d.css",
+    "static/js/main.3c68adbc.js"
   ]
 }

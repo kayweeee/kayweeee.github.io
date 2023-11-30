@@ -3,6 +3,8 @@ import SkillBadge from "./Components/SkillBadge";
 import skills from "./utils/Skills";
 import IntroPage from "./Components/IntroPage";
 import WorkExpPage from "./Components/WorkExpPage";
+import ProjectPage from "./Components/ProjectPage";
+
 const floatInVariants = {
   hidden: {
     opacity: 0,
@@ -31,6 +33,13 @@ function App() {
         <div className="snap-start h-fit flex justify-center">
           <WorkExpPage />
         </div>
+
+        {/* projects screen */}
+        <div className="snap-start min-h-screen h-fit flex">
+          <ProjectPage />
+        </div>
+
+        {/* education screen */}
 
         {/* skill screen */}
         <div className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-24 ">

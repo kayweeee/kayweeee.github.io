@@ -4,7 +4,7 @@ import skills from "./utils/Skills";
 import IntroPage from "./Components/IntroPage";
 import WorkExpPage from "./Components/WorkExpPage";
 import ProjectPage from "./Components/ProjectPage";
-
+import NavBar from "./Components/NavBar";
 const floatInVariants = {
   hidden: {
     opacity: 0,
@@ -19,30 +19,40 @@ const floatInVariants = {
     transition: { duration: 1.5, type: "spring" },
   },
 };
-
+// IDEAS: add the scrolly nav bar, make the contact icons go from middle to top left or smth, separate skills intor relevant categories, make individual pages for projects
 function App() {
+  const sections = [
+    { id: "intro", label: "ME" },
+    { id: "workExp", label: "WORK" },
+    { id: "projects", label: "PROJECTS" },
+    { id: "skills", label: "SKILLS" },
+  ];
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip scrollbar-hide">
+      <NavBar sections={sections} />
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip scrollbar-hide scroll-smooth">
         {/* intro screen */}
-        <div className="snap-start h-screen flex justify-center">
+        <div className="snap-start h-screen flex justify-center" id="intro">
           <IntroPage />
         </div>
 
         {/* about me screen */}
-        <div className="snap-start h-fit flex justify-center">
+        <div className="snap-start h-fit flex justify-center" id="workExp">
           <WorkExpPage />
         </div>
 
         {/* projects screen */}
-        <div className="snap-start min-h-screen h-fit flex">
+        <div className="snap-start min-h-screen h-fit flex" id="projects">
           <ProjectPage />
         </div>
 
         {/* education screen */}
 
         {/* skill screen */}
-        <div className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-24 ">
+        <div
+          className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-24"
+          id="skills"
+        >
           <div className="flex flex-col mt-5 pl-14 sm:pl-0">
             <div className="text-4xl sm:text-6xl font-display text-orange pr-10">
               SKILLS

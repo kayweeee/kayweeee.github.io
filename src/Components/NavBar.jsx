@@ -1,84 +1,69 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-// animation stuff
-const buttonPressVariants = {
-  press: {
-    scale: 0.8,
-  },
-};
+function NavBar({ sections }) {
+  const [activeSection, setActiveSection] = useState("intro");
 
-function NavBar() {
-  const [toggle, setToggle] = useState(false);
-  const handleLinkedin = () => {
-    window.open("https://www.linkedin.com/in/kay-wee-tan/");
-  };
-  const handleGithub = () => {
-    window.open("https://github.com/kayweeee");
-  };
+  useEffect(() => {
+    const sectionElements = sections.map((section) =>
+      document.getElementById(section.id)
+    );
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the section is in view
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sectionElements.forEach((element) => {
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      sectionElements.forEach((element) => {
+        if (element) observer.unobserve(element);
+      });
+    };
+  }, [sections]);
 
   return (
-    <div>
-      <motion.button
-        className="z-40 fixed top-1 right-3 md:right-5"
-        onClick={() => setToggle(!toggle)}
-        variants={buttonPressVariants}
-        whileTap="press"
-      >
-        <FontAwesomeIcon
-          icon={toggle ? faChevronRight : faChevronLeft}
-          style={{ color: "#F9DCC4" }}
-          className="p-3"
-          size="xl"
-        />
-      </motion.button>
-      <div
-        className={`top-1 right-3 md:right-5 fixed p-3 pl-5 pr-10 flex flex-row rounded z-30 ease-in-out duration-100 ${
-          toggle ? "translate-x-0" : "translate-x-52"
-        }`}
-      >
-        <div className="flex flex-row gap-4">
-          <motion.button variants={buttonPressVariants} whileHover="press">
-            <a href="mailto:tankaywee09@gmail.com">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                style={{ color: "#F9DCC4" }}
-                size="lg"
-              />
-            </a>
-          </motion.button>
-          <motion.button
-            onClick={handleLinkedin}
-            variants={buttonPressVariants}
-            whileHover="press"
+    <nav className="fixed left-8 top-1/2 transform md:-translate-y-1/2 hidden md:flex flex-col items-start space-y-6">
+      {sections.map((section, index) => (
+        <div key={section.id} className="relative">
+          <a
+            href={`#${section.id}`}
+            className="relative flex items-center space-x-3 z-10 group"
+            onClick={() => setActiveSection(section.id)}
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              style={{ color: "#F9DCC4" }}
-              size="lg"
-            />
-          </motion.button>
-          <motion.button
-            onClick={handleGithub}
-            variants={buttonPressVariants}
-            whileHover="press"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ color: "#F9DCC4" }}
-              size="lg"
-            />
-          </motion.button>
+            {/* Circle */}
+            <div
+              className={`w-5 h-5 rounded-full flex items-center justify-center shadow-md group-hover:bg-orange transition-colors ${
+                activeSection === section.id ? "bg-orange" : "bg-light-orange"
+              }`}
+            ></div>
+            {/* Text */}
+            <span
+              className={`group-hover:font-bold transition-colors text-xs ${
+                activeSection === section.id ? "font-bold" : ""
+              }`}
+            >
+              {section.label}
+            </span>
+          </a>
+          {/* Vertical Line */}
+          {index < sections.length - 1 && (
+            <div className="absolute w-1 bg-gray-200 h-6 left-2.5 transform -translate-x-1/2 z-0"></div>
+          )}
         </div>
-      </div>
-    </div>
+      ))}
+    </nav>
   );
 }
 

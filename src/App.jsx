@@ -36,7 +36,7 @@ function App() {
           <IntroPage />
         </div>
 
-        {/* about me screen */}
+        {/* work screen */}
         <div className="snap-start h-fit flex justify-center" id="workExp">
           <WorkExpPage />
         </div>
@@ -50,7 +50,7 @@ function App() {
 
         {/* skill screen */}
         <div
-          className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-24"
+          className="snap-start flex flex-col justify-center h-auto min-h-screen sm:pl-44"
           id="skills"
         >
           <div className="flex flex-col mt-5 pl-14 sm:pl-0">

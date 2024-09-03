@@ -1,32 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.6572b04d.css",
-    "main.js": "/static/js/main.3c68adbc.js",
+    "main.css": "/static/css/main.52982bac.css",
+    "main.js": "/static/js/main.42dabe67.js",
     "static/media/sds.jpg": "/static/media/sds.19f2bf9726a4842d31c9.jpg",
+    "static/media/cfg.jpg": "/static/media/cfg.94eb2591d3e934702627.jpg",
     "static/media/me.png": "/static/media/me.17958c640279a3f0532a.png",
     "static/media/hci.png": "/static/media/hci.b518153f1b4e7fe95d35.png",
+    "static/media/tastysnack_logo.png": "/static/media/tastysnack_logo.f8c17f2542981529fbd4.png",
+    "static/media/privyr_logo.png": "/static/media/privyr_logo.4f027bf2f8f6eea2658f.png",
     "static/media/react_logo.png": "/static/media/react_logo.81ed438b18e24116794d.png",
     "static/media/me1.jpg": "/static/media/me1.37303e676a1654c20de3.jpg",
     "static/media/mongo_logo.png": "/static/media/mongo_logo.41e505b098e3087319b8.png",
     "static/media/bootstrap_logo.png": "/static/media/bootstrap_logo.a692f04a045f8133192d.png",
-    "static/media/american_flag.png": "/static/media/american_flag.f75b91399afcd79c5640.png",
     "static/media/tailwind_logo.png": "/static/media/tailwind_logo.9c2e5bcf4f97d73e438e.png",
-    "static/media/cfglogo.png": "/static/media/cfglogo.518c8dcad822c8f1f923.png",
-    "static/media/pawjourr_logo.png": "/static/media/pawjourr_logo.f37d29dfca99d4fc1046.png",
-    "static/media/tastysnack_logo.png": "/static/media/tastysnack_logo.c3c0a154c1e1ec6f3166.png",
-    "static/media/reapra_logo.png": "/static/media/reapra_logo.a9c8bf679f225db6a315.png",
+    "static/media/django_logo.png": "/static/media/django_logo.e2d0ed2e07fbbc1c4dd9.png",
+    "static/media/graphql_logo.png": "/static/media/graphql_logo.8f15978b39b0870a9f0e.png",
+    "static/media/reapra_logo.png": "/static/media/reapra_logo.37fa889cfa10f1a1138d.png",
+    "static/media/aws_logo.png": "/static/media/aws_logo.316da603b6d42393e022.png",
     "static/media/firebase_logo.png": "/static/media/firebase_logo.8584a25cb878e376b81d.png",
     "static/media/nextjs_logo.png": "/static/media/nextjs_logo.5e42720796883e5d7251.png",
+    "static/media/sns_logo.png": "/static/media/sns_logo.f6e73f5745d96561cba3.png",
+    "static/media/ses_logo.png": "/static/media/ses_logo.12f0c2a036596580a296.png",
+    "static/media/s3_logo.png": "/static/media/s3_logo.dfc47c8f737823a3a520.png",
     "static/media/css_logo.png": "/static/media/css_logo.1063f6a88e1955ec31e7.png",
     "static/media/js_logo.png": "/static/media/js_logo.c26feef46ff18cfda7b4.png",
     "static/media/html_logo.png": "/static/media/html_logo.64a4f163c4ab5757278a.png",
+    "static/media/pawjourr_logo.png": "/static/media/pawjourr_logo.f545ab0446a4cbe171ba.png",
     "static/media/jwt_logo.svg": "/static/media/jwt_logo.56f1e8c2e3c6e934664375ec002ea50d.svg",
     "index.html": "/index.html",
-    "main.6572b04d.css.map": "/static/css/main.6572b04d.css.map",
-    "main.3c68adbc.js.map": "/static/js/main.3c68adbc.js.map"
+    "main.52982bac.css.map": "/static/css/main.52982bac.css.map",
+    "main.42dabe67.js.map": "/static/js/main.42dabe67.js.map"
   },
   "entrypoints": [
-    "static/css/main.6572b04d.css",
-    "static/js/main.3c68adbc.js"
+    "static/css/main.52982bac.css",
+    "static/js/main.42dabe67.js"
   ]
 }

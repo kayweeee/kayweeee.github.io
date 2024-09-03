@@ -10,6 +10,10 @@ import nextjslogo from "../images/skill-logos/nextjs_logo.png";
 import jslogo from "../images/skill-logos/js_logo.png";
 import htmllogo from "../images/skill-logos/html_logo.png";
 import csslogo from "../images/skill-logos/css_logo.png";
+import djangologo from "../images/skill-logos/django_logo.png";
+import vuelogo from "../images/skill-logos/vue_logo.png";
+import pythonlogo from "../images/skill-logos/python_logo.png";
+import awslogo from "../images/skill-logos/aws_logo.png";
 
 const privyr = {
   name: "Privyr",
@@ -26,11 +30,12 @@ increasing sales conversions by 20%.
 automate workflows and increase visibility on business metrics.     
 ● Implemented new user settings, including API creation and S3 uploads in Django.  `,
   skills: [
-    { logo: nextjslogo, name: "Next.js" },
+    { logo: djangologo, name: "Django" },
+    { logo: awslogo, name: "AWS" },
+    { logo: vuelogo, name: "Vue" },
     { logo: tailwindlogo, name: "Tailwind" },
-    { logo: csslogo, name: "CSS" },
-    { logo: htmllogo, name: "HTML" },
     { logo: jslogo, name: "JavaScript" },
+    { logo: pythonlogo, name: "Python" },
   ],
 };
 

@@ -1,6 +1,38 @@
+// company logos
+import privyrlogo from "../images/work-logos/privyr_logo.png";
 import pawjourrlogo from "../images/work-logos/pawjourr_logo.png";
 import tastysnacklogo from "../images/work-logos/tastysnack_logo.png";
 import reapralogo from "../images/work-logos/reapra_logo.png";
+
+// skill logos
+import tailwindlogo from "../images/skill-logos/tailwind_logo.png";
+import nextjslogo from "../images/skill-logos/nextjs_logo.png";
+import jslogo from "../images/skill-logos/js_logo.png";
+import htmllogo from "../images/skill-logos/html_logo.png";
+import csslogo from "../images/skill-logos/css_logo.png";
+
+const privyr = {
+  name: "Privyr",
+  logo: privyrlogo,
+  // link: "https://youtu.be/YisfvX_UO3s",
+  title: "FULL STACK ENGINEER INTERN",
+  date: "May 2024 - Present",
+  country: "Singapore",
+  description: `● Independently developed new features and >10 pages using HTML, CSS, Bootstrap, Vue, and Tailwind,
+including user settings, PWAs, automated event-triggered messages, webhook-enabled contact forms.    
+● Eliminate queries related to payment discounts and credits by integrating products with Stripe API,
+increasing sales conversions by 20%.     
+● Integrated company's product with external APIs (WhatsApp, Google Forms, Intercom, Slack) to
+automate workflows and increase visibility on business metrics.     
+● Implemented new user settings, including API creation and S3 uploads in Django.  `,
+  skills: [
+    { logo: nextjslogo, name: "Next.js" },
+    { logo: tailwindlogo, name: "Tailwind" },
+    { logo: csslogo, name: "CSS" },
+    { logo: htmllogo, name: "HTML" },
+    { logo: jslogo, name: "JavaScript" },
+  ],
+};
 
 const pawjourr = {
   name: "Pawjourr",
@@ -9,13 +41,27 @@ const pawjourr = {
   title: "SOFTWARE ENGINEER INTERN",
   date: "May 2023 - Aug 2023",
   country: "United States of America",
-  description: `As a tech intern, my role included independently coding pages for
-the company's product and website based on given Figma designs and
-optimising the performance of those websites. I also developed a
-prototype for an OpenAI brief generator. On top of coding, I assisted in Product Development together with the CTO and CEO. Some responsibilities include:
-\n- Attending client meetings for user studies \n- Compiling
-insights from the company website and presenting suggested changes
-to the executive team \n- Assisting in Business Development`,
+  description: `As a tech intern, my role included independently coding pages for the company's product and website, and working closely with the CEO and CTO to generate business and product insights.    
+  &nbsp;       
+
+  On the tech side, some of my tasks include:   
+  ● Coded > 8 pages for the company's products and website using Next.js, Tailwind and GraphQL. Includes features such as filtering, pagination and form submission.    
+  ● Optimising the performance of websites using lazy loading, tree shaking, server-side rendering    
+  ● Developed a brief generator using OpenAI API    
+  ● In-charge of migrating the company website from Next.js 12 to Next.js 13    
+  &nbsp;   
+
+On top of coding, I assisted in Product Development together with the CTO and CEO. Some responsibilities include:   
+● Attending client meetings for user studies, and suggesting improvements to the tech team  
+● Compiling insights from the company website and presenting suggested changes to the executive team  
+● Assisting in Business Development  `,
+  skills: [
+    { logo: nextjslogo, name: "Next.js" },
+    { logo: tailwindlogo, name: "Tailwind" },
+    { logo: csslogo, name: "CSS" },
+    { logo: htmllogo, name: "HTML" },
+    { logo: jslogo, name: "JavaScript" },
+  ],
 };
 
 const tastysnack = {
@@ -37,4 +83,4 @@ const reapra = {
   description: `My initial responsibilities as an investment intern included sourcing for potential founders, being the initial contact point, and shadowing my superiors through the process of bringing a founder through the pipeline. Through this, I was able to learn how to engage with founders and gained a deep understanding about the global start-up ecosystem. \nI was later entrusted with the responsibility of doing the initial screening (in the form of 1-on-1 interviews) for founders who were interested in collaborating with REAPRA. I was conducting a minimum of 5 interviews every week with founders mostly based in the SEA region. \nAlthough my internship was supposed to be from February to May, the company extended an offer for me to continue working part-time with them in the same role until my school semester started in August.`,
 };
 
-export { pawjourr, tastysnack, reapra };
+export { privyr, pawjourr, tastysnack, reapra };

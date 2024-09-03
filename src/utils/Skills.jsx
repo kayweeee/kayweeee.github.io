@@ -13,23 +13,49 @@ import jestlogo from "../images/skill-logos/jest_logo.png";
 import mongologo from "../images/skill-logos/mongo_logo.png";
 import firebaselogo from "../images/skill-logos/firebase_logo.png";
 import jwtlogo from "../images/skill-logos/jwt_logo.svg";
+import djangologo from "../images/skill-logos/django_logo.png";
+import vuelogo from "../images/skill-logos/vue_logo.png";
+import graphqllogo from "../images/skill-logos/graphql_logo.png";
 
 const skills = [
-  { logo: csslogo, name: "CSS" },
-  { logo: htmllogo, name: "HTML" },
-  { logo: jslogo, name: "JavaScript" },
-  { logo: pythonlogo, name: "Python" },
-  { logo: reactlogo, name: "React" },
-  { logo: nextjslogo, name: "Next.js" },
-  { logo: tailwindlogo, name: "Tailwind" },
-  { logo: bootstraplogo, name: "Bootstrap" },
-  { logo: nodejslogo, name: "Node.js" },
-  { logo: expresslogo, name: "Express.js" },
-  { logo: jestlogo, name: "Jest" },
-  { logo: mongologo, name: "MongoDB" },
-  { logo: firebaselogo, name: "Firebase" },
-  { logo: jwtlogo, name: "JWT" },
-  { logo: githublogo, name: "Github" },
+  {
+    category: "LANGUAGES",
+    skillArray: [
+      { logo: jslogo, name: "JavaScript" },
+      { logo: pythonlogo, name: "Python" },
+      { logo: csslogo, name: "CSS" },
+      { logo: htmllogo, name: "HTML" },
+    ],
+  },
+  {
+    category: "FRONTEND",
+    skillArray: [
+      { logo: reactlogo, name: "React" },
+      { logo: nextjslogo, name: "Next.js" },
+      { logo: vuelogo, name: "Vue" },
+      { logo: tailwindlogo, name: "Tailwind" },
+      { logo: bootstraplogo, name: "Bootstrap" },
+    ],
+  },
+  {
+    category: "BACKEND",
+    skillArray: [
+      { logo: djangologo, name: "Django" },
+      { logo: nodejslogo, name: "Node.js" },
+      { logo: expresslogo, name: "Express.js" },
+      { logo: graphqllogo, name: "GraphQL" },
+    ],
+  },
+  {
+    category: "OTHERS",
+    skillArray: [
+      { logo: githublogo, name: "Github" },
+      { logo: mongologo, name: "MongoDB" },
+      { logo: jestlogo, name: "Jest" },
+      { logo: jwtlogo, name: "JWT" },
+      { logo: firebaselogo, name: "Firebase" },
+    ],
+  },
 ];
 
 export default skills;

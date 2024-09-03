@@ -1,6 +1,6 @@
 import sds from "../images/project-logos/sds.jpg";
 import hci from "../images/project-logos/hci.png";
-import cfg from "../images/project-logos/cfglogo.png";
+import cfg from "../images/project-logos/cfg.jpg";
 
 const projects = [
   {

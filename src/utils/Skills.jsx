@@ -16,6 +16,9 @@ import jwtlogo from "../images/skill-logos/jwt_logo.svg";
 import djangologo from "../images/skill-logos/django_logo.png";
 import vuelogo from "../images/skill-logos/vue_logo.png";
 import graphqllogo from "../images/skill-logos/graphql_logo.png";
+import s3logo from "../images/skill-logos/s3_logo.png";
+import snslogo from "../images/skill-logos/sns_logo.png";
+import seslogo from "../images/skill-logos/ses_logo.png";
 
 const skills = [
   {
@@ -44,6 +47,14 @@ const skills = [
       { logo: nodejslogo, name: "Node.js" },
       { logo: expresslogo, name: "Express.js" },
       { logo: graphqllogo, name: "GraphQL" },
+    ],
+  },
+  {
+    category: "CLOUD SERVICES",
+    skillArray: [
+      { logo: s3logo, name: "S3" },
+      { logo: snslogo, name: "SNS" },
+      { logo: seslogo, name: "SES" },
     ],
   },
   {

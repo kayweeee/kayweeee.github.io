@@ -6,40 +6,41 @@ import NavBar from "./Components/NavBar";
 
 function App() {
   const sections = [
-    { id: "intro", label: "ME" },
-    { id: "workExp", label: "WORK" },
-    { id: "projects", label: "PROJECTS" },
-    { id: "skills", label: "SKILLS" },
+    { id: "intro", label: "Me" },
+    { id: "workExp", label: "Work" },
+    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
   ];
+
   return (
     <>
       <NavBar sections={sections} />
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-clip scrollbar-hide scroll-smooth">
-        {/* intro screen */}
-        <div className="snap-start h-screen flex justify-center" id="intro">
+      <main className="overflow-x-clip">
+        <section id="intro" className="min-h-screen">
           <IntroPage />
-        </div>
+        </section>
 
-        {/* work screen */}
-        <div className="snap-start h-fit flex justify-center" id="workExp">
+        <section id="workExp" className="border-t border-border-subtle">
           <WorkExpPage />
-        </div>
+        </section>
 
-        {/* projects screen */}
-        <div className="snap-start min-h-screen h-fit flex" id="projects">
+        <section id="projects" className="border-t border-border-subtle bg-off-white/30">
           <ProjectPage />
-        </div>
+        </section>
 
-        {/* education screen */}
-
-        {/* skill screen */}
-        <div
-          className="snap-start flex h-fit min-h-screen sm:pl-44"
-          id="skills"
-        >
+        <section id="skills" className="border-t border-border-subtle">
           <SkillPage />
-        </div>
-      </div>
+        </section>
+
+        <footer className="border-t border-border-subtle py-12">
+          <div className="section-container text-center">
+            <p className="text-sm text-gray-400">
+              Designed & built by{" "}
+              <span className="font-display text-orange">Kay Wee</span>
+            </p>
+          </div>
+        </footer>
+      </main>
     </>
   );
 }

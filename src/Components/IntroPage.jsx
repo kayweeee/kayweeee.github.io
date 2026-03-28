@@ -1,75 +1,134 @@
 import me from "../images/pictures/me.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
-// animation stuff
-const buttonPressVariants = {
-  press: {
-    scale: 1.2,
-  },
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] },
+  }),
 };
 
 function IntroPage() {
-  const handleLinkedin = () => {
-    window.open("https://www.linkedin.com/in/kay-wee-tan/");
-  };
-  const handleGithub = () => {
-    window.open("https://github.com/kayweeee");
-  };
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center w-full gap-x-8 py-3">
-      <div className="sm:w-2/5 flex justify-center sm:justify-end">
-        <img
-          className="h-[250px] sm:h-[400px] drop-shadow-xl"
-          src={me}
-          alt="kay wee"
-        />
-      </div>
-      <div className="sm:w-3/5 flex flex-col items-center sm:items-start text-center sm:text-start">
-        <p className="text-4xl sm:text-7xl font-display text-orange">KAY WEE</p>
-        <div className="bg-orange my-2 h-[5px] w-1/2 sm:w-full" />
-        <p className="font-semibold">ASPIRING FULLSTACK DEVELOPER</p>
-        <p className="px-8 sm:px-0 pr-2 sm:w-96">
-          Software development calls to all my passions. It combines creativity
-          with problem solving in the form of coding, giving me the best of both
-          worlds. Looking to use technology to create a positive impact on our
-          big earth :)
-        </p>
-        <div className="flex flex-row gap-4 mt-2">
-          <motion.button variants={buttonPressVariants} whileHover="press">
-            <a href="mailto:tankaywee09@gmail.com">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="text-orange"
-                size="xl"
-              />
-            </a>
-          </motion.button>
-          <motion.button
-            onClick={handleLinkedin}
-            variants={buttonPressVariants}
-            whileHover="press"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-orange"
-              size="xl"
-            />
-          </motion.button>
-          <motion.button
-            onClick={handleGithub}
-            variants={buttonPressVariants}
-            whileHover="press"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="text-orange"
-              size="xl"
-            />
-          </motion.button>
+    <div className="section-container flex flex-col lg:flex-row items-center justify-center 
+                    min-h-screen gap-12 lg:gap-20 pt-20 pb-12">
+      <motion.div
+        className="flex-shrink-0"
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        custom={0}
+      >
+        <div className="relative">
+          <div className="absolute -inset-4 bg-surface rounded-card -z-10" />
+          <img
+            className="h-[220px] sm:h-[280px] lg:h-[360px] rounded-card object-cover shadow-card-hover"
+            src={me}
+            alt="Kay Wee"
+          />
         </div>
+      </motion.div>
+
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-lg">
+        <motion.p
+          className="text-sm font-semibold tracking-widest uppercase text-gray-400 mb-3"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={1}
+        >
+          Aspiring Fullstack Developer
+        </motion.p>
+
+        <motion.h1
+          className="text-5xl sm:text-6xl lg:text-7xl font-display text-orange leading-tight"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={2}
+        >
+          KAY WEE
+        </motion.h1>
+
+        <motion.div
+          className="bg-orange h-1 w-20 mt-4 mb-6 rounded-full"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={3}
+        />
+
+        <motion.p
+          className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 max-w-md"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={4}
+        >
+          Software development calls to all my passions. Combining creativity
+          with problem solving through code, I aim to use technology to create
+          a positive impact.
+        </motion.p>
+
+        <motion.div
+          className="flex flex-wrap items-center gap-4"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={5}
+        >
+          <a
+            href="mailto:tankaywee09@gmail.com"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-orange text-white 
+                       font-semibold rounded-card-sm shadow-sm hover:opacity-90 
+                       transition-all duration-200"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+            Get in Touch
+          </a>
+
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border-medium 
+                       text-gray-700 font-medium rounded-card-sm hover:bg-surface 
+                       transition-all duration-200"
+          >
+            View Projects
+            <FontAwesomeIcon icon={faArrowDown} className="text-xs" />
+          </a>
+        </motion.div>
+
+        <motion.div
+          className="flex items-center gap-5 mt-8"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={6}
+        >
+          <a
+            href="https://www.linkedin.com/in/kay-wee-tan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-orange transition-colors duration-200"
+            aria-label="LinkedIn profile"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          </a>
+          <a
+            href="https://github.com/kayweeee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-orange transition-colors duration-200"
+            aria-label="GitHub profile"
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,28 +1,24 @@
 import { motion } from "framer-motion";
 
-function SkillBadge(props) {
+function SkillBadge({ logo, name, index = 0 }) {
   return (
     <motion.div
-      className="flex flex-col justify-center items-center py-0 w-32"
-      initial={{
-        opacity: 0,
-        scale: 0.5,
-        y: 50,
-      }}
-      whileInView={{
-        opacity: 1,
-        scale: 1,
-        y: 0,
-      }}
-      transition={{ duration: 0.7, type: "spring", delay: props.i * 0.3 }}
+      className="flex flex-col items-center gap-2 py-2 px-2"
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
     >
-      <img
-        src={props.logo}
-        alt={props.name}
-        className="h-[75px] object-contain"
-      />
-      <p>{props.name}</p>
+      <div className="w-12 h-12 flex items-center justify-center 
+                      bg-white rounded-card-sm border border-border-subtle shadow-card p-2">
+        <img
+          src={logo}
+          alt={name}
+          className="w-8 h-8 object-contain"
+          loading="lazy"
+        />
+      </div>
+      <span className="text-xs font-medium text-gray-600 text-center">{name}</span>
     </motion.div>
   );
 }

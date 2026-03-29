@@ -1,7 +1,6 @@
 import me from "../images/pictures/me.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -95,33 +94,6 @@ function IntroPage() {
           >
             View Projects
             <FontAwesomeIcon icon={faArrowDown} className="text-xs" />
-          </a>
-        </motion.div>
-
-        <motion.div
-          className="flex items-center gap-5 mt-8"
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          custom={6}
-        >
-          <a
-            href="https://www.linkedin.com/in/kay-wee-tan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-orange transition-colors duration-200"
-            aria-label="LinkedIn profile"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
-          <a
-            href="https://github.com/kayweeee"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-orange transition-colors duration-200"
-            aria-label="GitHub profile"
-          >
-            <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
         </motion.div>
       </div>

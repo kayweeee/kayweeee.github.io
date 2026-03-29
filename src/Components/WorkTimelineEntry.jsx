@@ -1,27 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-
-function parseDescription(text) {
-  if (!text) return [];
-
-  const cleaned = text.replace(/&nbsp;/g, "\n").replace(/\\n/g, "\n");
-
-  if (cleaned.includes("●")) {
-    const sections = cleaned.split(/(?=●)/g);
-    return sections
-      .map((s) => s.replace(/^●\s*/, "").trim())
-      .filter(Boolean);
-  }
-
-  return cleaned
-    .split("\n")
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0);
-}
+import ReactMarkdown from "react-markdown";
 
 function WorkTimelineEntry({ company, isLast }) {
-  const bullets = parseDescription(company.description);
-
   return (
     <div className="relative flex gap-5 sm:gap-6">
       {/* Timeline column */}
@@ -96,18 +77,13 @@ function WorkTimelineEntry({ company, isLast }) {
           </div>
         )}
 
-        {/* Bullets */}
-        <ul className="space-y-2.5">
-          {bullets.map((bullet, i) => (
-            <li
-              key={i}
-              className="flex gap-3 text-sm text-gray-600 leading-relaxed"
-            >
-              <span className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-orange" />
-              <span>{bullet}</span>
-            </li>
-          ))}
-        </ul>
+        {/* Description */}
+        <div className="text-sm text-gray-600 leading-relaxed 
+                        [&_p]:mb-2 [&_p:last-child]:mb-0 
+                        [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1
+                        [&_ul]:marker:text-orange">
+          <ReactMarkdown>{company.description}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );

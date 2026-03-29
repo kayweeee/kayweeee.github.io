@@ -27,18 +27,18 @@ function WorkTimelineEntry({ company, isLast }) {
       {/* Timeline column */}
       <div className="flex flex-col items-center flex-shrink-0 pt-0.5">
         <div
-          className="relative z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white 
-                     border-2 border-border-medium flex items-center justify-center 
-                     shadow-card overflow-hidden"
+          className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-card bg-white 
+                     border-2 border-dashed border-border-medium flex items-center justify-center 
+                     shadow-sm overflow-hidden p-2"
         >
           <img
             src={company.logo}
             alt={company.name}
-            className="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+            className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
           />
         </div>
         {!isLast && (
-          <div className="w-px flex-1 bg-border-medium min-h-[32px]" />
+          <div className="w-px flex-1 border-l-2 border-dashed border-border-medium min-h-[32px]" />
         )}
       </div>
 
@@ -75,14 +75,13 @@ function WorkTimelineEntry({ company, isLast }) {
           </div>
         </div>
 
-        {/* Tech stack — moved above bullets for visibility */}
+        {/* Tech stack */}
         {company.skills && company.skills.length > 0 && (
           <div className="mb-4 flex flex-wrap gap-2">
             {company.skills.map((skill) => (
               <div
                 key={skill.name}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full 
-                           bg-off-white border border-border-subtle"
+                className="sticker-sm flex items-center gap-1.5"
               >
                 <img
                   src={skill.logo}

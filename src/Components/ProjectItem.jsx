@@ -11,13 +11,15 @@ function ProjectItem({ project, reversed = false }) {
     >
       {/* Image */}
       <div className="lg:w-1/2 flex-shrink-0">
-        <div className="relative overflow-hidden rounded-card aspect-[16/10] lg:aspect-[4/3]">
-          <img
-            src={project.pic}
-            alt={project.name}
-            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-            loading="lazy"
-          />
+        <div className="sticker p-2 sm:p-3">
+          <div className="relative overflow-hidden rounded-md aspect-[16/10] lg:aspect-[4/3]">
+            <img
+              src={project.pic}
+              alt={project.name}
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
 
@@ -33,8 +35,9 @@ function ProjectItem({ project, reversed = false }) {
                 href={project.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-border-medium flex items-center 
-                           justify-center text-gray-400 hover:text-orange hover:border-orange 
+                className="w-9 h-9 rounded-full border-2 border-dashed border-border-medium 
+                           flex items-center justify-center text-gray-400 
+                           hover:text-orange hover:border-orange 
                            transition-all duration-200"
                 aria-label={`Visit ${project.name} website`}
               >
@@ -46,8 +49,9 @@ function ProjectItem({ project, reversed = false }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-border-medium flex items-center 
-                           justify-center text-gray-400 hover:text-orange hover:border-orange 
+                className="w-9 h-9 rounded-full border-2 border-dashed border-border-medium 
+                           flex items-center justify-center text-gray-400 
+                           hover:text-orange hover:border-orange 
                            transition-all duration-200"
                 aria-label={`View ${project.name} on GitHub`}
               >
@@ -63,11 +67,7 @@ function ProjectItem({ project, reversed = false }) {
 
         <div className="flex flex-wrap gap-2">
           {project.skills.map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider 
-                         rounded-full bg-surface border border-border-subtle text-gray-600"
-            >
+            <span key={skill} className="sticker-sm text-xs font-semibold text-gray-600">
               {skill}
             </span>
           ))}

@@ -14,6 +14,9 @@
     font-family: "Inter", system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
+    background-color: #fff;
+    background-image: radial-gradient(circle, rgba(254, 200, 154, 0.15) 1px, transparent 1px);
+    background-size: 32px 32px;
   }
 
   *:focus-visible {
@@ -46,7 +49,7 @@
 
 @layer components {
   .section-container {
-    @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-12;
+    @apply relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12;
   }
 
   .section-heading {
@@ -62,5 +65,28 @@
   .badge {
     @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold 
            bg-off-white text-gray-700 border border-border-subtle;
+  }
+
+  .sticker {
+    @apply bg-white border-2 border-dashed border-border-medium rounded-lg px-3 py-1.5 
+           shadow-sm;
+  }
+
+  .sticker-sm {
+    @apply bg-white border border-dashed border-border-medium rounded-md px-2 py-1;
+  }
+
+  .sticker-label {
+    @apply inline-flex items-center text-xs font-semibold text-gray-400 
+           bg-white border border-dashed border-border-medium rounded-full 
+           px-3 py-1 tracking-wide;
+  }
+
+  .dotted-divider {
+    @apply border-t-2 border-dashed border-border-medium;
+  }
+
+  .blob {
+    @apply absolute rounded-full blur-3xl opacity-30 pointer-events-none -z-10;
   }
 }

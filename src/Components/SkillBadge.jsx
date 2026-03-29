@@ -9,8 +9,7 @@ function SkillBadge({ logo, name, index = 0 }) {
       viewport={{ once: true }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
     >
-      <div className="w-12 h-12 flex items-center justify-center 
-                      bg-white rounded-card-sm border border-border-subtle shadow-card p-2">
+      <div className="sticker-sm w-12 h-12 flex items-center justify-center p-2">
         <img
           src={logo}
           alt={name}

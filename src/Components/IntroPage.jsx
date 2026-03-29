@@ -24,14 +24,11 @@ function IntroPage() {
         animate="visible"
         custom={0}
       >
-        <div className="relative">
-          <div className="absolute -inset-4 bg-surface rounded-card -z-10" />
-          <img
-            className="h-[220px] sm:h-[280px] lg:h-[360px] rounded-card object-cover shadow-card-hover"
-            src={me}
-            alt="Kay Wee"
-          />
-        </div>
+        <img
+          className="h-[220px] sm:h-[280px] lg:h-[360px] drop-shadow-xl"
+          src={me}
+          alt="Kay Wee"
+        />
       </motion.div>
 
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-lg">
@@ -70,9 +67,7 @@ function IntroPage() {
           animate="visible"
           custom={4}
         >
-          Software development calls to all my passions. Combining creativity
-          with problem solving through code, I aim to use technology to create
-          a positive impact.
+          Software development calls to all my passions. It combines creativity with problem solving in the form of coding, giving me the best of both worlds. Looking to use technology to create a positive impact on our big earth :)
         </motion.p>
 
         <motion.div
@@ -83,7 +78,7 @@ function IntroPage() {
           custom={5}
         >
           <a
-            href="mailto:tankaywee09@gmail.com"
+            href="#contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-orange text-white 
                        font-semibold rounded-card-sm shadow-sm hover:opacity-90 
                        transition-all duration-200"

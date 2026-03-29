@@ -7,15 +7,19 @@ function WorkExpPage() {
 
   return (
     <div className="section-container py-24 sm:py-32">
-      <motion.div
-        className="section-heading"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        Work Experience
-      </motion.div>
+      <div className="mb-10 sm:mb-14">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="sticker-label mb-4">
+            where i've been
+          </span>
+          <h2 className="section-heading mt-3">Work Experience</h2>
+        </motion.div>
+      </div>
 
       <div>
         {companies.map((company, index) => (

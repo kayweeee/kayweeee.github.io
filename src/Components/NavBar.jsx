@@ -83,13 +83,13 @@ function NavBar({ sections }) {
               {section.label}
             </button>
           ))}
-          <a
-            href="mailto:tankaywee09@gmail.com"
+          <button
+            onClick={() => scrollTo("contact")}
             className="ml-2 px-5 py-2 text-sm font-semibold text-white bg-orange rounded-card-sm 
                        hover:opacity-90 transition-all duration-200 shadow-sm"
           >
             Contact
-          </a>
+          </button>
         </nav>
 
         <button
@@ -130,13 +130,6 @@ function NavBar({ sections }) {
                   {section.label}
                 </button>
               ))}
-              <a
-                href="mailto:tankaywee09@gmail.com"
-                className="mt-2 px-4 py-3 text-sm font-semibold text-white bg-orange rounded-lg 
-                           text-center hover:opacity-90 transition-opacity"
-              >
-                Contact Me
-              </a>
             </div>
           </motion.nav>
         )}

@@ -13,15 +13,19 @@ function SkillPage() {
 
   return (
     <div className="section-container py-24 sm:py-32">
-      <motion.div
-        className="section-heading"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        Skills
-      </motion.div>
+      <div className="mb-10 sm:mb-14">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="sticker-label mb-4">
+            my toolkit
+          </span>
+          <h2 className="section-heading mt-3">Skills</h2>
+        </motion.div>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {skills.map((skill, index) => (

@@ -62,14 +62,11 @@ function About() {
             custom={1}
           >
             <div className="flex-shrink-0">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-surface rounded-card -z-10" />
-                <img
-                  src={pic1}
-                  alt="Kay Wee"
-                  className="w-56 md:w-72 rounded-card object-cover shadow-card-hover"
-                />
-              </div>
+              <img
+                src={pic1}
+                alt="Kay Wee"
+                className="w-56 md:w-72 rounded-card object-cover shadow-card-hover"
+              />
             </div>
 
             <div className="max-w-lg text-center md:text-left">

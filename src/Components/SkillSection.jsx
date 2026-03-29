@@ -3,7 +3,7 @@ import SkillBadge from "./SkillBadge";
 function SkillSection({ skill, span = "" }) {
   return (
     <div
-      className={`card-base p-5 sm:p-6 ${span}`}
+      className={`sticker p-5 sm:p-6 ${span}`}
     >
       <h3 className="text-xs font-semibold text-orange uppercase tracking-widest mb-4">
         {skill.category}

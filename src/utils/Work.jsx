@@ -1,4 +1,5 @@
 // company logos
+import gxslogo from "../images/work-logos/gxs_logo.jpeg";
 import privyrlogo from "../images/work-logos/privyr_logo.png";
 import pawjourrlogo from "../images/work-logos/pawjourr_logo.png";
 import tastysnacklogo from "../images/work-logos/tastysnack_logo.png";
@@ -15,12 +16,27 @@ import vuelogo from "../images/skill-logos/vue_logo.png";
 import pythonlogo from "../images/skill-logos/python_logo.png";
 import awslogo from "../images/skill-logos/aws_logo.png";
 
+const gxs = {
+  name: "GXS",
+  logo: gxslogo,
+  title: "SOFTWARE ENGINEER",
+  date: "Jul 2025 - Present",
+  country: "Singapore",
+  description: `● Engineered tax information architectures and APIs, collaborating with Risk, Product and Data stakeholders to automate regional compliance and data analysis.
+
+● Led iOS development for new lending partner onboarding, aligning Backend and QA teams for a frictionless launch.
+
+● Automated SDK update workflows, reducing manual developer overhead by 40% and accelerating release velocity.
+
+● Managed iOS on-call support, triaging critical production bugs to safeguard platform stability.`,
+};
+
 const privyr = {
   name: "Privyr",
   logo: privyrlogo,
   // link: "https://youtu.be/YisfvX_UO3s",
   title: "FULL STACK ENGINEER INTERN",
-  date: "May 2024 - Present",
+  date: "May 2024 - Jul 2025",
   country: "Singapore",
   description: `● Independently developed new features and >10 pages using HTML, CSS, Bootstrap, Vue, and Tailwind,
 including user settings, PWAs, automated event-triggered messages, webhook-enabled contact forms.    
@@ -88,4 +104,4 @@ const reapra = {
   description: `My initial responsibilities as an investment intern included sourcing for potential founders, being the initial contact point, and shadowing my superiors through the process of bringing a founder through the pipeline. Through this, I was able to learn how to engage with founders and gained a deep understanding about the global start-up ecosystem. \nI was later entrusted with the responsibility of doing the initial screening (in the form of 1-on-1 interviews) for founders who were interested in collaborating with REAPRA. I was conducting a minimum of 5 interviews every week with founders mostly based in the SEA region. \nAlthough my internship was supposed to be from February to May, the company extended an offer for me to continue working part-time with them in the same role until my school semester started in August.`,
 };
 
-export { privyr, pawjourr, tastysnack, reapra };
+export { gxs, privyr, pawjourr, tastysnack, reapra };

@@ -1,9 +1,9 @@
 import WorkTimelineEntry from "./WorkTimelineEntry";
-import { pawjourr, tastysnack, reapra, privyr } from "../utils/Work";
+import { gxs, pawjourr, tastysnack, reapra, privyr } from "../utils/Work";
 import { motion } from "framer-motion";
 
 function WorkExpPage() {
-  const companies = [privyr, pawjourr, tastysnack, reapra];
+  const companies = [gxs, privyr, pawjourr, tastysnack, reapra];
 
   return (
     <div className="section-container py-24 sm:py-32">

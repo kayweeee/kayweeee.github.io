@@ -1,8 +1,25 @@
 import sds from "../images/project-logos/sds.jpg";
 import hci from "../images/project-logos/hci.png";
 import cfg from "../images/project-logos/cfg.jpg";
+import cpf from "../images/project-logos/CPF.jpg";
+import hks from "../images/project-logos/HKS.jpg";
 
 const projects = [
+  {
+    name: "Predicting Emotion with AI",
+    desc: "A research project done in collaboration with HKS. Led the end-to-end development of an AI system to quantify human emotion, managing experimental setup and model training.",
+    skills: ["AI/ML", "Python", "Research"],
+    website: "https://www.linkedin.com/feed/update/urn:li:activity/7274858303069790208/",
+    github: "https://github.com/kayweeee/waves-saliency-predictor",
+    pic: hks,
+  },
+  {
+    name: "CPF Training Simulator",
+    desc: "Built in collaboration with CPF. Developed a training simulator and management dashboard to streamline the training process, using Next.js, Tailwind, MySQL, FastAPI, and OpenAI API. Reduced time required per training cycle by over 70%.",
+    skills: ["Next.js", "Tailwind", "MySQL", "FastAPI", "OpenAI API"],
+    website: "https://www.youtube.com/watch?v=85aeRPY_tL8",
+    pic: cpf,
+  },
   {
     name: "Dynostic",
     desc: "A module in school done in collaboration with Google. Developed a mobile application with machine learning capabilities to assist in quality checks, along with a dashboard to compile the data collected from the app for our client (TSH Group)",

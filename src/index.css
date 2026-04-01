@@ -87,6 +87,6 @@
   }
 
   .blob {
-    @apply absolute rounded-full blur-3xl opacity-30 pointer-events-none -z-10;
+    @apply absolute rounded-full blur-3xl opacity-40 pointer-events-none -z-10;
   }
 }

@@ -38,7 +38,7 @@ function IntroPage() {
           animate="visible"
           custom={1}
         >
-          Aspiring Fullstack Developer
+          Software Engineer | Product Enthusiast
         </motion.p>
 
         <motion.h1
@@ -60,13 +60,23 @@ function IntroPage() {
         />
 
         <motion.p
+          className="text-gray-600 text-base sm:text-lg leading-relaxed mb-2 max-w-md"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={4}
+        >
+          Combining the human experience with technical problem solving is my passion. I’ve found that the most interesting challenges aren’t just technical—they’re human, and the best solutions live right at the intersection of logic and empathy. 
+        </motion.p>
+
+        <motion.p
           className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 max-w-md"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           custom={4}
         >
-          Software development calls to all my passions. It combines creativity with problem solving in the form of coding, giving me the best of both worlds. Looking to use technology to create a positive impact on our big earth :)
+          Looking to use technology to create a positive impact on our big earth :)
         </motion.p>
 
         <motion.div

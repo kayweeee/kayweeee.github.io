@@ -32,7 +32,7 @@ function IntroPage() {
 
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-lg">
         <motion.p
-          className="text-sm font-semibold tracking-widest uppercase text-gray-400 mb-3"
+          className="text-xs sm:text-sm font-semibold tracking-widest sm:tracking-widest uppercase text-gray-400 mb-3 whitespace-nowrap"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -80,7 +80,7 @@ function IntroPage() {
         </motion.p>
 
         <motion.div
-          className="flex flex-wrap items-center gap-4"
+          className="flex flex-wrap justify-center lg:justify-start items-center gap-4"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
